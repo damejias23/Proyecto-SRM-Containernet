@@ -51,18 +51,24 @@ sudo make install
 You must apply the following command to download the files that the project execution contains:
 
 ```
-git clone
+git clone https://github.com/damejias23/Proyecto-SRM-Containernet.git
 ```
 
-## build Server and Client images
+## Build Server and Client images
 
 For the execution of the nodes. The images must be created with the information of the nodes to be executed. For that, the following commands must be carried out:
 
-```# To Server imagen
+```sh
+cd Proyecto-SRM-Containernet
+# To Server imagen
 docker build --tag=server_telegram -f webserver_curl/Dockerfile.server webserver_curl
 # To client imagen
 docker build --tag=client_data -f Dockerfile.client .
 ```
+ The images are built with version **python:3.8.2-buster**. 
+
+
+## Run the simulation
 
 
 
