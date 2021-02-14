@@ -78,3 +78,43 @@ In the execution of this program the file **containernet_node_sensor_telegram.py
 
 **Node3** will be in charge of measuring the humidity and sending it to **Server**.
 
+
+```sh
+sudo python3 containernet_node_sensor_telegram.py
+```
+
+When executing the command the following result would be shown
+
+```python
+*** Adding controller
+*** Adding docker containers
+1: 
+server: kwargs {'ip': '10.0.0.250'}
+server: update resources {'cpu_quota': -1}
+1: 
+client_data; latest; None; sha256:7bb7b9d108774bacce1dc99b36513eca089d599424948ac749cb6862a154a13c
+client_data; latest; None; sha256:53939ad671343059088d4a185ccbe16f418733af692e23fd848441ac301daafd
+client1: kwargs {'ip': '10.0.0.251'}
+client1: update resources {'cpu_quota': -1}
+1: 
+client_data; latest; None; sha256:7bb7b9d108774bacce1dc99b36513eca089d599424948ac749cb6862a154a13c
+client_data; latest; None; sha256:53939ad671343059088d4a185ccbe16f418733af692e23fd848441ac301daafd
+client2: kwargs {'ip': '10.0.0.252'}
+client2: update resources {'cpu_quota': -1}
+1: 
+client_data; latest; None; sha256:7bb7b9d108774bacce1dc99b36513eca089d599424948ac749cb6862a154a13c
+client_data; latest; None; sha256:53939ad671343059088d4a185ccbe16f418733af692e23fd848441ac301daafd
+client3: kwargs {'ip': '10.0.0.253'}
+client3: update resources {'cpu_quota': -1}
+*** Adding switches
+*** Creating links
+(1.00Mbit 100ms delay) (1.00Mbit 100ms delay) (1.00Mbit 100ms delay) (1.00Mbit 100ms delay) *** Starting network
+*** Configuring hosts
+server client1 client2 client3 
+*** Starting controller
+c0 
+*** Starting 2 switches
+s1 (1.00Mbit 100ms delay) s2 (1.00Mbit 100ms delay) ...(1.00Mbit 100ms delay) (1.00Mbit 100ms delay) 
+*** Running CLI
+*** Starting CLI:
+```
