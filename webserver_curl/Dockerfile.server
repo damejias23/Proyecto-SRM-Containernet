@@ -1,0 +1,22 @@
+FROM python:3.8.2-buster
+ WORKDIR /app
+ COPY . .
+RUN apt-get update && apt-get install -y \
+    net-tools \
+    iputils-ping \
+    iproute2 \
+    curl
+    
+RUN apt-get update 
+RUN apt-get upgrade -y
+
+RUN apt-get install mosquitto -y
+RUN apt-get install mosquitto-clients -y
+
+   
+
+RUN pip install paho-mqtt 
+RUN pip install python-telegram-bot
+
+
+ CMD ["python", "app_ServerTelegram2.py"]
