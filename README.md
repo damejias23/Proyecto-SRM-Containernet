@@ -118,3 +118,8 @@ s1 (1.00Mbit 100ms delay) s2 (1.00Mbit 100ms delay) ...(1.00Mbit 100ms delay) (1
 *** Running CLI
 *** Starting CLI:
 ```
+
+## Test 
+
+For the test of the use in Telegram you can open the boot in the following link: https://t.me/SRM_Danielbot
+
