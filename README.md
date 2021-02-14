@@ -46,6 +46,23 @@ sudo make develop
 sudo make install
 ```
 
+## Download the repository files
+
+You must apply the following command to download the files that the project execution contains:
+
+```
+git clone
+```
+
+## build Server and Client images
+
+For the execution of the nodes. The images must be created with the information of the nodes to be executed. For that, the following commands must be carried out:
+
+```# To Server imagen
+docker build --tag=server_telegram -f webserver_curl/Dockerfile.server webserver_curl
+# To client imagen
+docker build --tag=client_data -f Dockerfile.client .
+```
 
 
 
