@@ -70,5 +70,9 @@ docker build --tag=client_data -f Dockerfile.client .
 
 ## Run the simulation
 
+In the execution of this program the file **containernet_node_sensor_telegram.py** is used. In this file the creation of the nodes is declared. Where the **Server, Node1, Node2 and Node3** nodes are created.
 
+**Node1** will be in charge of measuring the temperature and sending it to **Server**
+**Node2** will be in charge of measuring the luminicity and sending it to **Server**
+**Node3** will be in charge of measuring the humidity and sending it to **Server**
 
